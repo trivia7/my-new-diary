@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    padding: 1em;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 2em;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Entries Styling */
+#entries-container {
+    margin-top: 2em;
+}
+
+.entry {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Entry Date */
+.entry small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.entry p {
+    margin: 0 0 1em;
+}
+
+.entry button {
+    background-color: #28a745;
+}
+
+.entry button:hover {
+    background-color: #218838;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 1em;
+    padding-left: 1em;
+    border-left: 2px solid #ccc;
+}
+
+.comments-section h4 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.comments-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments-section ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 4px;
+}
+/* Comments Section */
+.comments-section ul li small {
+    display: block;
+    margin-top: 3px;
+    color: #666;
+    font-size: 0.85em;
+}
+
+.comments-section form {
+    margin-top: 10px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    font-size: 14px;
+}

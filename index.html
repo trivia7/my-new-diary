@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Diary Website</h1>
+    </header>
+    <main>
+        <section id="diary-entry-form">
+            <h2>Write a New Entry</h2>
+            <form id="entry-form">
+                <textarea id="entry-text" placeholder="Write your diary entry here..." required></textarea>
+                <button type="submit">Save Entry</button>
+            </form>
+        </section>
+        <section id="diary-entries">
+            <h2>Previous Entries</h2>
+            <div id="entries-container"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
