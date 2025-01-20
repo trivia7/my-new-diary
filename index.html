@@ -3,26 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diary Books</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Diary with Comments</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" 
+        rel="stylesheet"
+    >
 </head>
-<body>
-    <header>
-        <h1>Diary Website</h1>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4 text-center shadow-md">
+        <h1 class="text-2xl font-bold">My Diary</h1>
     </header>
-    <main>
-        <section id="diary-entry-form">
-            <h2>Write a New Entry</h2>
-            <form id="entry-form">
-                <textarea id="entry-text" placeholder="Write your diary entry here..." required></textarea>
-                <button type="submit">Save Entry</button>
-            </form>
-        </section>
-        <section id="diary-entries">
-            <h2>Previous Entries</h2>
-            <div id="entries-container"></div>
-        </section>
-    </main>
+
+    <!-- Diary Form -->
+    <section class="container mx-auto my-8 max-w-xl">
+        <h2 class="text-xl font-semibold mb-4">Write a New Entry</h2>
+        <form id="entry-form" class="p-6 bg-white shadow-md rounded-lg space-y-4">
+            <div>
+                <label for="entry-author" class="block text-sm font-medium text-gray-700">Your Name</label>
+                <input 
+                    type="text" 
+                    id="entry-author" 
+                    class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500" 
+                    placeholder="Enter your name" 
+                    required
+                >
+            </div>
+            <div>
+                <label for="entry-text" class="block text-sm font-medium text-gray-700">Diary Entry</label>
+                <textarea 
+                    id="entry-text" 
+                    class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-green-500 focus:border-green-500" 
+                    rows="4" 
+                    placeholder="Write your diary entry here..." 
+                    required
+                ></textarea>
+            </div>
+            <button 
+                type="submit" 
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-lg"
+            >
+                Save Entry
+            </button>
+        </form>
+    </section>
+
+    <!-- Entries Container -->
+    <section id="entries-container" class="container mx-auto my-8 max-w-2xl space-y-6"></section>
+
     <script src="app.js"></script>
 </body>
 </html>
